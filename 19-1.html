@@ -1,0 +1,56 @@
+<!-- 19-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运算符优先级</title>
+</head>
+<body>
+    <script>
+        // var a=1;
+        // var b=2;
+        // var c=0;
+        // 想先a跟c先运算,可以放到小括号里面
+        // console.log((a || c) && b);
+
+        // 运算有限级自上往下：
+        // 1.（）优先级最高
+        // 2. 一元运算符 ++ -- ！
+        // 3. 算术运算符先* /后 + -
+        // 4.关系运算符 > < >= <=
+        // 5.相等运算符 == ==== != !==
+        // 6. 逻辑运算符 先&&后||
+        // 7.赋值运算 =
+
+        // var s=4>=6 || '人' != '哈哈' && !(12*2+3 == 122) && true;
+        // 思路
+        // var s=4>=6 || '人' != '哈哈' && !(false) && true;
+        // var s= false || '人' != '哈哈' && !(false) && true;
+        // var s= false || '人' != '哈哈' && true && true;
+        // var s= false || true && true && true;
+        // var s= false || true && true;
+        // var s= false || true;
+        // var s= true;
+        // true;
+
+        // var n=10;
+        // var f=5 ==n/2 && (2+2*n);
+        // console.log(f);
+        // 思路
+        // var f=5 ==n/2 && (22);
+        // var f=5 ==5 && (22);
+        // var f= true && (22);
+        // var f= 22; 前后都不为空则为真逻辑与的决定值一般在后面 
+        // 比如console.log(100&&'sssss')输出就是'sssss' 
+        // 而逻辑或一般看前面，比如 ：// console.log(false||33); //输出就是33
+        // 反正输出的值就是最后决定真假的值。
+        // 即 console.log(100|| false) 输出就是100;
+        // 22;
+        
+
+        
+    </script>
+</body>
+</html>

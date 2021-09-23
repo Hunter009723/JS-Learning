@@ -1,0 +1,63 @@
+<!-- 22-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while循环</title>
+</head>
+<body>
+    <script>
+        // 如果条件成立，里面代码会一直反复执行，直到条件不成立；
+        // while(条件){
+        //     代码
+        // while案例1 
+        // var i=0;
+        // while(i<10){
+        //     console.log(i);
+        //     // 每执行一次都会加1
+        //     i++;
+        //     // ->0,1,2,3,4,5,6,7,8,9;
+        // }
+        // 案例2 计算 1-100之间所有数字的和，1加到100；
+        // var i=1;
+        // var s=0;
+        // while(i<=100) {
+        //     s=s+i;
+        //     i++;
+        // }
+        // console.log(s);
+        // ->5050;
+
+        // 案例3 请计算100以内7的倍数有哪些1-100，并求和
+        // var i=1;
+        // var s=0;
+        // while(i<=100){
+        //     if(i%7==0){
+        //         console.log(i)
+        //         s+=i;
+        //     }
+            
+        //     i++;
+        // }
+        // console.log(s);
+        
+
+        // 案例4 请打印100以内所有能被3整除的数字的和。
+        var i=1;
+        var s=0;
+        while(i<=100){
+            if(i%3==0){
+                console.log(i)
+                s+=i;
+            }
+            
+            i++;
+        }
+        console.log(s);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- 21-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-case的用法</title>
+</head>
+<body>
+    <script>
+        // // 如果值=值1则运行第一行代码，不相等继续执行看是否等于值2，都不相等
+        // // 则执行最后一行default代码，结束；
+        // switch (值) {
+        //     case 值1:
+        //         code ;
+        //         break;
+        //     case 值2:
+        //         code ;
+        //         break;
+        //     default:
+        //         code;
+        //         break
+        // }
+        // var jibie='B';
+        // switch (jibie) {
+        //         case ('A'):
+        //             console.log('90分以上');
+        //             break;
+        //         case ('B'):
+        //             console.log('80-90之间');
+        //             break;
+        //         case ('C'):
+        //             console.log('70-80之间');
+        //             break;
+        //         default:
+        //             console.log('比较差');
+        //             break;
+
+        //     }
+            // switch-case用的还是比较少的，毕竟switch()要等于某个值才能
+            // 触发不同的case下面的语句
+            // 上面的案例我们还是用
+            var jibie = 'D';
+                if (jibie == 'A') { console.log('90分以上') }
+                else if (jibie == 'B') { console.log('80-90之间') }
+                else if (jibie == 'C') { console.log('70-80之间') }
+                else { console.log('比较差') };
+           
+    </script>
+</body>
+</html>

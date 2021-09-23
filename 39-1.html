@@ -1,0 +1,35 @@
+<!-- 39-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全局和局部变量</title>
+</head>
+<body>
+    <script>
+        // 1.全局vs局部
+        // var a=1;//全局变量
+        // // 函数内局部作用域，函数外全局作用域
+        // function f1(){
+        //     var a =2;//局部变量
+        //     // console.log(a) //-->结果是2
+        // }
+        // console.log(a); //-->结果是1
+        
+
+        // 2.变量提升:代码执行前变量已经被声明了
+        console.log(a); //24行没注释 结果 undefined
+        var a=2; //这一行被注释就报错了
+
+        // JS代码的运行分为两个阶段
+        // 1：解析(编译)阶段：语法检查,变量及函数声明
+        // 2: 运行阶段
+
+        var a;
+        console.log(a);
+        a=2;
+    </script>
+</body>
+</html>

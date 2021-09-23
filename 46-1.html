@@ -1,0 +1,54 @@
+<!-- 46-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的遍历和删除</title>
+</head>
+<body>
+    <script>
+        // var obj1={
+        //     name:'路飞',
+        //     age:15,
+        //     sex:'男'
+        // }
+        // // for....in 
+        // // for(键 in 对象)
+        
+        // for(var k in obj1){
+        //     console.log(obj1[k]);
+        // }
+        // // for in 不仅可以循环遍历对象，还可以循环遍历数组
+        // // 补充 ：for in 还可以遍历数组
+        // var arr=[2,4,7,8,4];
+        // for(var k in arr){
+            
+        //     console.log(arr[k]);
+        // }
+        var o1={
+            name:'路飞',
+            age:15,
+            sex:'男',
+            fun:function(){
+                console.log(this.age)
+            }
+        }
+        var o2={
+            name:'路飞',
+            age:18,
+            sex:'男',
+            fun:function(){
+                console.log(this.age)
+            }
+        }
+        // 对o1.age属性的删除
+        console.log(o1);
+        delete o1.age;
+        // 重温this的指向
+        o1.fun(); //->undefined
+        o2.fun(); //->18
+    </script>
+</body>
+</html>

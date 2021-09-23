@@ -1,0 +1,30 @@
+<!-- 41-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数作用域</title>
+</head>
+<body>
+    <script>
+        var a=1;
+        function f1(){
+            var a=3;
+           function f2(){
+               var a=6;
+               function f3(){
+                   var a=5;
+                //向上一层找，找不到就向上找，知道全局作用域。
+                // 完全找不到就报错。
+                   console.log(a);
+               }f3();
+               
+           }f2();
+        }
+      
+        f1();
+    </script>
+</body>
+</html>

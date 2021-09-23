@@ -5,9 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>数组对象操作</title>
 </head>
 <body>
-    
+    <script>
+        var arr=[1,2,3,4,5];
+        console.log(arr.length);
+
+        var k=3;
+        // 1.往数组的末端添加元素
+        arr.push(k);
+        console.log(arr);
+        // 2.pop:删除最后一个元素
+        // arr.pop();
+        // console.log(arr)
+        // 3.slice:删除数组,返回一个新的数组，对原数组不会被改变
+        // 将第3到第6-1=5元素拿出来->3,4,5,不改变原数组；
+        var arr1=arr.slice(2,5);
+        console.log(arr,arr1);
+        // 4.concat:合并数组
+        var kk=['q','k','h',1,2,3];
+        var arr1=arr.concat(kk);
+        console.log(arr,'\n',arr1)
+        // 5.join:用符号隔开,默认逗号。
+        var s1=arr.join()
+        var s2=arr.join('-')
+        console.log(s1)  // -> 1,2,3,4,5,3
+        console.log(s2)  // -> 1-2-3-4-5-3
+       
+
+    </script>
 </body>
 </html>

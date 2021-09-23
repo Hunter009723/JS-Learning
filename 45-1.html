@@ -1,0 +1,61 @@
+<!-- 45-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this 的指向</title>
+</head>
+<body>
+    <script>
+        // var k='678';
+        // function fun(){
+        //     console.log(k);
+        //     console.log(this.k);
+        // } 
+        // var o1 = {
+        //     k: '123',
+        //     f: fun,
+        // }
+        // var o2 = {
+        //     k:'345',
+        //     f:fun
+
+        // }
+        // o1.f(); //->678 123
+        // o2.f(); //->678 345
+
+        // 结论: this 运行在哪个对象下，就指向哪个对象。
+        // 看这个函数被哪个对象调用了。
+
+        var o1={
+            age1:18,
+            fun:function(){
+                console.log(this.age1);
+                console.log(this.age2);
+                console.log(this.age3);
+            }
+    
+        }
+        var o2={
+            age2:16,
+            // 值已经运行在o2对象下，所以调用的是o2.age=16;
+            fun:o1.fun
+            };
+        var o3={
+            age3:12,
+            // 值已经运行在o3对象下，所以调用的是o2.age=16;
+            fun3:o2.fun
+            };
+       // 值已经运行在o3对象下，所以调用的是o2.age=16;
+        o3.fun3(); 
+        // 结果
+        // undefined
+        // undefined
+        // 12
+        
+    </script>
+   
+</body>
+</html>

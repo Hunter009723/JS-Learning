@@ -1,0 +1,37 @@
+<!-- 36-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名函数调用</title>
+</head>
+<body>
+    <script>
+        // 匿名函数，函数本身是没有名字的
+        // var fun=function(){
+        //     console.log(1);
+        // }
+        // fun();
+        
+        // 立即执行函数 自调用匿名函数
+        (function(){
+            alert(123);
+
+        })();
+
+        // 作用域
+        // 防止全局变量的污染，封装一个局部作用域。
+        // 比如 
+        var a=4;
+        (function(a,b){
+            alert(a+b)
+        })(2,3);
+
+        console.log(a); //->结果还是4 不会变成2
+        
+        
+    </script>
+</body>
+</html>

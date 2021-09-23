@@ -1,0 +1,24 @@
+<!-- 13-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布尔类型转换</title>
+</head>
+<body>
+    <script>
+        var a=Boolean('0');
+        var b=Boolean(0);
+        var c=Boolean('2'); //不管里面是啥只要字符串有内容都是True
+        var d=Boolean(2);
+        var e=Boolean(null);
+        var f=Boolean(undefined);
+        var g=Boolean('');
+        var h=Boolean(' ');
+        console.log(a,b,c,d,e,f);
+        // true false true true false false
+    </script>
+</body>
+</html>

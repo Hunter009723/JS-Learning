@@ -1,0 +1,37 @@
+<!-- 37-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数当做参数1</title>
+</head>
+<body>
+    <script>
+        // function fn(){
+        //     return 
+        // }
+        // console.log(typeof fn());
+        // 返回是undefined
+        // console.log(typeof fn);
+        // 返回是function
+
+        function f1(s){
+            // var k=123+s 
+            // console.log(k);
+            s();
+        }
+        // f1('sss');
+
+        var f2=function(){
+            console.log(222);
+            
+        }
+        // f2函数作为值，传入f1函数内
+       f1(f2);
+        //结果是222
+        //回调    
+    </script>
+</body>
+</html>

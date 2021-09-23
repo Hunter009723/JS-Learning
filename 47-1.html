@@ -1,0 +1,30 @@
+<!-- 47-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>包装对象</title>
+</head>
+<body>
+    <script>
+        var str='123';
+        console.log(str.length);
+        
+        // 包装对象
+        // 三种原始类型 数值 字符串 布尔
+        // 原始类型的数据在一定条件下可以自动转换为对象 这就是包装对象
+
+        // 获取原始类型，将123包装成一个对象。
+        var v1=new Number(123);
+        console.log(v1);
+        console.log(123);
+        // 原始值能当做对象来调用，可以调用各种属性及方法。
+        // 如果包装对象使用完成 会自动立即销毁。
+
+        var a='456';
+        a.length; //有的数据类型可以在后面加点的这一个瞬间变成了对象。
+    </script>
+</body>
+</html>

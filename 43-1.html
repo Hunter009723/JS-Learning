@@ -1,0 +1,42 @@
+<!-- 43-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的声明及使用</title>
+</head>
+<body>
+    <script>
+        // // 1.自面量声明对象；
+        // var obj1={};
+        // // 对象中的数据都是键值成对存在的。
+        // // 通常来说，值是函数则称为方法，其他类型的值都是属性。
+        
+        // var obj2={age:12,sg:190,name:'西岭',fei:function(){}};
+        // console.log(typeof obj2);
+        // // 2.实例化方法获取对象（内置构造函数)
+        // var obj2=new Object();
+
+        // // 3.自定义构造函数
+        // function Fun(){
+
+        // }
+        // // 实例化自定义构造函数声明对象
+        // var f=new Fun();
+        var obj2={
+            age:12,
+            sg:190,
+            name:'西岭',
+            fei:function(){
+                console.log(3);
+            }
+        };
+        // 获取对象的属性或者方法
+        console.log(obj2.sg);
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- 40-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作用域与代码执行</title>
+</head>
+<body>
+    <script>
+        // var a=12;
+        // function abc(){
+        //     alert(a); 
+        //     var a=10;
+        // }
+        // abc(); //由于函数提升，function内的a会被声明，由于还没被
+        // // 赋值所以a=undefined->alert结果也是undefined
+
+        console.log(a);
+        function a(){
+            console.log('aaaa');
+
+        }
+        //如果函数和变量重名了，那么函数声明会替换变量声明。
+        // 换成b()上面那个console就是undefined
+        var a=1;
+        // 下面输出1而非function a(){
+            // 内容
+        // }
+        // 原因是赋值是最后一步
+        // 如果改成var a;则下面的console依然输出
+        // function a(){
+            // 内容
+        // }
+        console.log(a);
+    </script>
+</body>
+</html>

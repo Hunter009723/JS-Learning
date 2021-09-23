@@ -1,0 +1,34 @@
+<!-- 4.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转译字符</title>
+</head>
+<body>
+    <script>
+        // 数值型
+        var age=18;
+        var nu=1.2;
+        // 数值、字符串 string、布尔、undefined、null、对象
+        // 李四不是字符串 '李四'才是字符串
+        // 如果在字符串中要使用引号，请添加转译字符\
+        var str1= '李四\'王大拿\'';
+        alert(str1);
+        // 打印出 我喜欢”黑马“'程序员'
+        var str2="我喜欢\"黑马\"\'程序员\'";
+        alert(str2);
+        // 如果是打印空格，用\b代替，否则无论多少个只显示其中一个；
+        var str3="我\b\b\b喜欢";
+        alert(str3);
+        // 对于斜杠，把转译字符再转译一次得用\\表示
+        var str4='我喜欢\\黑马程序员\\';
+        alert(str4);
+        
+
+
+    </script>
+</body>
+</html>

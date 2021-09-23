@@ -1,0 +1,47 @@
+<!-- 15-1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一元运算符</title>
+</head>
+<body>
+    <script>
+        // 一元运算符
+        // 1.对自身操作加一或减一（++ --) ==Python里面的a+=1 / a-=1;
+        // var n1=5;
+        // n1++;
+        // n1--;
+        // console.log(n1);
+        
+        // 2.尝试把++或--放n1前面 看上去没啥问题
+        // var n1=5;
+        // --n1; 
+        // ++n1;
+        // console.log(n1);
+
+        // 3.发现问题，++在前和++在后的区别
+        var n1=5;
+        ++n1;
+        var n2=6;
+        // console.log(n1+ ++n2); //结果是13
+        console.log(n1+ n2++); //结果是 12
+        console.log(n1,n2); //但打印结果是6 跟 7 6+7=13
+        // 得出规律：
+        // 如果操作符在变量的前面，先进行自身运算，再进行其他运算。
+        // 如果操作符在变量的后面，先进性其他运算，在进行自身运算。
+        // 示范
+        // var a=1;
+        // var b=a++ + a++; //1+ a=2 +2=1+2=3;
+        // var b=++a + a++; //++a=1+1=2,a=2+a=2=4->结果是4；
+        // var b=++a + ++a; //++a=1+1=2,++a=2+1=3,2+3=5->结果是5；
+        // var b=a++ + ++a; //1+ a=2 +2+1= 1+3 =4;
+        console.log(b);
+
+
+
+    </script>
+</body>
+</html>

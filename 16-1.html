@@ -1,0 +1,44 @@
+<!-- 16-html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逻辑运算符</title>
+</head>
+<body>
+    <script>
+        // && 逻辑与运算符 参与运算的数据只要同时为真，结果为真
+        // || 逻辑或运算符 参与运算的结果只要有一个为真，结果为真
+        // ！ 逻辑非运算符 获取相反结果
+        // 逻辑非例子1
+        // var a=true;
+        // console.log(!a); //false
+        // 逻辑非例子2
+        // var a='8';
+        // console.log(!a); //false
+
+        // 逻辑与例子1
+        var a=1;
+        var b=2;
+        var c=0;
+        // console.log(a && b); //2也是真
+        // console.log(c && b); //0 假
+        // console.log(a && c); //0 假
+        // // 逻辑或例子1
+        // console.log(a || b); //1 真 
+        // console.log(a || c); //1 真
+        //JS中，逻辑运算的结果是决定整个表达式的子表达的值； 
+        // 比如 console.log(a || b); //1 真 我知道a为真则可以肯定整个表达式的结果为真 
+        // console.log(a || c); //1 真 
+        /*逻辑表达式中含有多个逻辑运算符，有分优先级，先运行 && 再运行 || c&&b 是0 再看a跟0 ，因为a是真，所以无论后面是啥都逻辑
+         的结果或是真*/
+        console.log(a || c && b);
+        
+
+        
+    </script>
+</body>
+</html>
+ 
